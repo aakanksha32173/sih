@@ -1,7 +1,4 @@
-pandas
-nltk
 Flask
 numpy
 scikit_learn
 gunicorn
-tensorflow
