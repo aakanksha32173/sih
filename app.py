@@ -13,7 +13,9 @@ def man():
 @app.route('/chat', methods=['GET', 'POST'])
 def chatBot():
     chatInput = request.form['chatInput']
-    return jsonify(chatBotReply=chatWithBot(chatInput))
+   
+     chatBotReply=chatWithBot(chatInput)
+     return render_template('reply.html',chatBotReply)
 
 
 if __name__ == '__main__':
