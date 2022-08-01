@@ -10,7 +10,7 @@ app = Flask(__name__)
 def man():
     return render_template('index.html')
 
-@app.route('/chat', methods=['GET', 'POST'])
+@app.route('/chatInput', methods=['GET', 'POST'])
 def chatBot():
     chatInput = request.form['chatInput']
    
